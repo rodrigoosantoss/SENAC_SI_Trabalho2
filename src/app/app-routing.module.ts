@@ -1,7 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CardapioComponent } from './cardapio/cardapio.component';
+import { HomeComponent } from './home/home.component';
+import { NovocadastroComponent } from './novocadastro/novocadastro.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'home', component: HomeComponent },
+  { path: 'cardapio', component: CardapioComponent },
+  { path: 'novocadastro', component: NovocadastroComponent }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
