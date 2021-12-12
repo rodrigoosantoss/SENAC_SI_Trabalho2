@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { CardapioComponent } from './cardapio/cardapio.component';
 import { NovocadastroComponent } from './novocadastro/novocadastro.component';
+import { TabelaCardapioComponent } from './tabela-cardapio/tabela-cardapio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CardapioComponent,
-    NovocadastroComponent
+    NovocadastroComponent,
+    TabelaCardapioComponent
   ],
   imports: [
     BrowserModule,
