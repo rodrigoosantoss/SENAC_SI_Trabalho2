@@ -7,7 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { CardapioComponent } from './cardapio/cardapio.component';
 import { NovocadastroComponent } from './novocadastro/novocadastro.component';
 import { TabelaCardapioComponent } from './tabela-cardapio/tabela-cardapio.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule, FormBuilder } from '@angular/forms';
+import { DataFormModule } from './data-form/data-form.module';
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    DataFormModule
   ],
   providers: [],
   bootstrap: [AppComponent]
