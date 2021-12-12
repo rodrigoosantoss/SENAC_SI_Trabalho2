@@ -1,8 +1,9 @@
 <h1>cardapio works!</h1>
 
+<div>
 <input type="text" [value]="texto"><br><br>
 
-<table border="2">
+<table *ngIf="cardapio.length > 0" border="2">
   <tr>
     <th>LANCHE</th>
     <th>TAMANHO</th>
@@ -15,7 +16,10 @@
       <td>{{ card.ingredientes }}</td>
       <td>{{ card.preco }}</td>
   </tr>
+  </table>
+</div>
 
+  <button (click)="incrementar()">Logar</button>
 
 <!-- <table>
   <tr>

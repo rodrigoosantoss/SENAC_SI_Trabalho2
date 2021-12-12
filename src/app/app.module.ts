@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { CardapioComponent } from './cardapio/cardapio.component';
 import { NovocadastroComponent } from './novocadastro/novocadastro.component';
 import { TabelaCardapioComponent } from './tabela-cardapio/tabela-cardapio.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TabelaCardapioComponent } from './tabela-cardapio/tabela-cardapio.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -51,4 +51,8 @@ export class CardapioComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  incrementar(){
+
+  }
+
 }
